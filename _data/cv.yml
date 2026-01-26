@@ -3,27 +3,30 @@
   contents:
     - name: Full Name
       value: Charles Ciampa
-    - name: Date of Birth
-      value: 19th April 2003
+    # - name: Date of Birth
+    #   value: 19th April 2003
+    - name: Email
+      value: ciampa.c@northeastern.edu
     - name: Languages
       value: English, Spanish
+    - name: Location
+      value: Cambridge, MA
 
 - title: Education
   type: time_table
   contents:
-    - title: MS
-      institution: Khoury College at Northeastern University, Boston, MA, USA
-      year: 2027
+    - title: M.S. in Artificial Intelligence
+      institution: <a href="https://www.northeastern.edu">Northeastern University</a>
+      year: Sep. 2025 - Expected May 2027
       description:
-        - Description 1.
-        - Description 2.
+        - "Concentration: Machine Learning"
+        - "GPA: 4.0"
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: B.S. in Computer Science and Physics with Minor in Mathematics
+      institution: Khoury College at Northeastern University, Boston, MA, USA
       description:
         - Description 1.
         - Description 2.
@@ -31,9 +34,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Engineering Intern
+      institution: <a href="https://s1pbc.com/">S1 Industries PBC Inc.</a>
+      year: August 2024 - December 2024
       description:
         - Description 1.
         - Description 2.
@@ -41,15 +44,15 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Medical Device Testing Engineer Associate
+      institution: <a href="https://gentuity.com/">Gentuity</a>
+      year: July 2023 - December 2023
       description:
         - Description 1.
         - Description 2.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+    - title: Vice President
+      institution: AI Club at Northeastern
       year: 1917-1933
 
     - title: Professor of Theoretical Physics
@@ -61,12 +64,12 @@
       institution: University of Zurich, Zurich, Switzerland
       year: 1909 - 1911
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 # - title: Honors and Awards
 #   type: time_table
