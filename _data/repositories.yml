@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - CharlesC03
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - CharlesC03/NLP_Final_Project
+  - CharlesC03/cs4180-project
+  - CharlesC03/Improved-Managebac
+  - CharlesC03/Shorten-Videos
