@@ -24,18 +24,18 @@
               {% if content.location or content.score %}
                 <tr>
                   <td>
-                  {% if content.location %}
-                    <p class="location" style="margin-bottom: 0;">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ content.location }}
-                    </p>
-                  {% endif %}
-                  {% if content.score %}
-                    <p class="location" style="margin-bottom: 0;">
-                      <i class="fa-solid fa-graduation-cap iconlocation"></i>
-                      GPA: {{ content.score }}
-                    </p>
-                  {% endif %}
+                    {% if content.location %}
+                      <p class="location" style="margin-bottom: 0;">
+                        <i class="fa-solid fa-location-dot iconlocation"></i>
+                        {{ content.location }}
+                      </p>
+                    {% endif %}
+                    {% if content.score %}
+                      <p class="location" style="margin-bottom: 0;">
+                        <i class="fa-solid fa-graduation-cap iconlocation"></i>
+                        GPA: {{ content.score }}
+                      </p>
+                    {% endif %}
                   </td>
                 </tr>
               {% endif %}

@@ -19,39 +19,31 @@
       }
     ]
   },
-    "education": [
-        {
-            "institution": "Northeastern University",
-            "location": "Boston, MA, USA",
-            "url": "https://www.northeastern.edu/",
-            "area": "Artificial Intelligence with Concentration in Machine Learning",
-            "studyType": "MS",
-            "startDate": "2025-09-01",
-            "endDate": "2027-05-01",
-            "score": "4.0",
-            "GPA": "4.0",
-            "courses": [
-                "Natural Language Processing",
-                "Deep Learning",
-                "Robotic Science & Systems",
-                "Robotic Sensing & Navigation",
-                "Computer Vision"
-            ]
-        },
-        {
-            "institution": "Northeastern University",
-            "location": "Boston, MA, USA",
-            "url": "https://www.northeastern.edu/",
-            "area": "Computer Science and Physics with Minor in Mathematics",
-            "studyType": "BS",
-            "startDate": "2025-08-01",
-            "endDate": "2027-05-01",
-            "score": "3.3",
-            "courses": [
-                "Theory of Relativity"
-            ]
-        }
-    ],
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA, USA",
+      "url": "https://www.northeastern.edu/",
+      "area": "Artificial Intelligence with Concentration in Machine Learning",
+      "studyType": "MS",
+      "startDate": "2025-09-01",
+      "endDate": "2027-05-01",
+      "score": "4.0",
+      "GPA": "4.0",
+      "courses": ["Natural Language Processing", "Deep Learning", "Robotic Science & Systems", "Robotic Sensing & Navigation", "Computer Vision"]
+    },
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA, USA",
+      "url": "https://www.northeastern.edu/",
+      "area": "Computer Science and Physics with Minor in Mathematics",
+      "studyType": "BS",
+      "startDate": "2025-08-01",
+      "endDate": "2027-05-01",
+      "score": "3.3",
+      "courses": ["Theory of Relativity"]
+    }
+  ],
   "work": [
     {
       "name": "Institute for Advanced Study, Princeton University",
