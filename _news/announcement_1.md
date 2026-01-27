@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+date: 2026-1-27 1:00:00-0400
+title: Hello World!
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement.
+Hello. I have just finished creating my website. I will be adding more stuff as I continue to do more.
