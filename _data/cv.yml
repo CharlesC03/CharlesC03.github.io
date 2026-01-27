@@ -17,7 +17,9 @@
   contents:
     - title: M.S. in Artificial Intelligence
       institution: <a href="https://www.northeastern.edu">Northeastern University</a>
-      year: Sep. 2025 - Expected May 2027
+      location: Boston, MA
+      year: 2025.08-2027.05
+      area: Machine Learning
       description:
         - "Concentration: Machine Learning"
         - "GPA: 4.0"
