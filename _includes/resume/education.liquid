@@ -21,17 +21,24 @@
                   {% endif %}
                 </td>
               </tr>
-              {% if content.location %}
+              {% if content.location or content.score %}
                 <tr>
                   <td>
-                    <p class="location">
+                  {% if content.location %}
+                    <p class="location" style="margin-bottom: 0;">
                       <i class="fa-solid fa-location-dot iconlocation"></i>
                       {{ content.location }}
                     </p>
+                  {% endif %}
+                  {% if content.score %}
+                    <p class="location" style="margin-bottom: 0;">
+                      <i class="fa-solid fa-graduation-cap iconlocation"></i>
+                      GPA: {{ content.score }}
+                    </p>
+                  {% endif %}
                   </td>
                 </tr>
               {% endif %}
-            </tbody>
           </table>
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
