@@ -1,6 +1,6 @@
 ---
 layout: page
-title: High Speed Footage Analyzer 
+title: High Speed Footage Analyzer
 description: with background image
 img:
 importance: 4

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Automatic Lecture Reductor 
+title: Automatic Lecture Reductor
 description: a project with no image
 img: assets/img/editing.jpg
 importance: 2
