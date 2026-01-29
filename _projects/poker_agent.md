@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+title: Poker Agent
+description: Created a program in collaboration with a peer which learned to play Texas Hold'em by running 250,000 games through Deep Q-Learning, utilizing a backbone of PyTorch for the neural network.
+img: assets/img/poker.jpg
 importance: 2
-category: work
+category: School
 giscus_comments: true
 ---
 

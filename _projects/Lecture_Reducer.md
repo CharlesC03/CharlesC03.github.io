@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
+title: Automatic Lecture Reductor 
+description: a project with no image
+img: assets/img/editing.jpg
+importance: 2
+category: Fun
 ---
 
 Every project has a beautiful feature showcase page.

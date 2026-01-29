@@ -1,11 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: Estimating Trajectory From IMU
+description: Estimated vehicle trajectory exclusively from IMU by fusing magnetometer and gyroscope data, validated against GPS
+img: assets/img/car.jpg
+importance: 4
+category: School
 ---
 
 Every project has a beautiful feature showcase page.
