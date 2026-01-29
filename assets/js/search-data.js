@@ -17,7 +17,7 @@ ninja.data = [{
             window.location.href = "/resume/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
@@ -35,51 +35,56 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
+            },},{id: "projects-high-speed-footage-analyzer",
+          title: 'High Speed Footage Analyzer',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/Footage_Analyzer/";
+            },},{id: "projects-estimating-trajectory-from-imu",
+          title: 'Estimating Trajectory From IMU',
+          description: "Estimated vehicle trajectory exclusively from IMU by fusing magnetometer and gyroscope data, validated against GPS",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/IMU/";
+            },},{id: "projects-improved-managebac",
+          title: 'Improved Managebac',
+          description: "Made an extension to improve Managebac.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
+              window.location.href = "/projects/Improved_Managebac/";
+            },},{id: "projects-automatic-lecture-reductor",
+          title: 'Automatic Lecture Reductor',
           description: "a project with no image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/Lecture_Reducer/";
+            },},{id: "projects-estimated-transit-eta",
+          title: 'Estimated Transit ETA',
+          description: "Using data provided by the MBTA estimated my trip to school estimated length and expected time using Monte-Carlo.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
+              window.location.href = "/projects/MBTA_ETA/";
+            },},{id: "projects-chess-bot-player-move-predictor",
+          title: 'Chess Bot Player Move Predictor',
+          description: "Made an AI which can predict a players move given what moves they had previously made.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/chess_ai/";
+            },},{id: "projects-bias-transfer-in-model-distillation",
+          title: 'Bias Transfer in Model Distillation',
+          description: "Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to lightweight architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/model_distillaiton/";
+            },},{id: "projects-poker-agent",
+          title: 'Poker Agent',
+          description: "Created a program in collaboration with a peer which learned to play Texas Hold&#39;em by running 250,000 games through Deep Q-Learning, utilizing a backbone of PyTorch for the neural network.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/poker_agent/";
+            },},{id: "projects-robotic-photographer-for-3d-gaussian-splatting",
+          title: 'Robotic Photographer for 3D Gaussian Splatting',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+              window.location.href = "/projects/robot_photographer/";
+            },},{id: "projects-ar-tic-tac-toe",
+          title: 'AR Tic-Tac-Toe',
+          description: "Developed Tic-Tac-Toe app in the Vision Pro with immersive features.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/tic_tac_toe/";
             },},{
         id: 'social-email',
         title: 'email',
