@@ -58,22 +58,22 @@
         "Spearheaded the development of an Augmented Reality Tic-Tac-Toe game with options for multiplayer remote playing for VisionOS's mixed immersive environment using Swift, and support for Apple Personas over SharePlay.",
         "Created app specifications, testing procedures, and utilized TestFlight for internal testing with a small community of users to ensure the Tic-Tac-Toe app met requirements.",
         "Launched an internal AI project using local LLMs to read technical documents and access the internet through a local instance of SearXNG and mapped over 70 separate AI and LLM tools and software with 3 views, including relevant logos, summaries, use cases, rankings, and applicable licenses related to usage or development."
-    ]
+      ]
     },
     {
-        "name": "Gentuity, LLC ",
-        "position": "Medical Device Testing Engineer Associate",
-        "url": "https://gentuity.com/",
-        "location":"Sudbury, MA",
-        "startDate": "2023-07-01",
-        "endDate": "2023-12-31",
-        "summary": "Wrote code and worked directly with executives.",
-        "highlights": [
-            "Performed 10+ explorations of technologies and problems using methodology developed by MIT professor Luis Perez-Breva for his startups focused iTeams class, including reading research for each new technology and proposing potential companies to create.",
-            "Spearheaded the development of an Augmented Reality Tic-Tac-Toe game with options for multiplayer remote playing for VisionOS's mixed immersive environment using Swift, and support for Apple Personas over SharePlay.",
-            "Created app specifications, testing procedures, and utilized TestFlight for internal testing with a small community of users to ensure the Tic-Tac-Toe app met requirements.",
-            "Launched an internal AI project using local LLMs to read technical documents and access the internet through a local instance of SearXNG and mapped over 70 separate AI and LLM tools and software with 3 views, including relevant logos, summaries, use cases, rankings, and applicable licenses related to usage or development."
-        ]
+      "name": "Gentuity, LLC ",
+      "position": "Medical Device Testing Engineer Associate",
+      "url": "https://gentuity.com/",
+      "location": "Sudbury, MA",
+      "startDate": "2023-07-01",
+      "endDate": "2023-12-31",
+      "summary": "Wrote code and worked directly with executives.",
+      "highlights": [
+        "Performed 10+ explorations of technologies and problems using methodology developed by MIT professor Luis Perez-Breva for his startups focused iTeams class, including reading research for each new technology and proposing potential companies to create.",
+        "Spearheaded the development of an Augmented Reality Tic-Tac-Toe game with options for multiplayer remote playing for VisionOS's mixed immersive environment using Swift, and support for Apple Personas over SharePlay.",
+        "Created app specifications, testing procedures, and utilized TestFlight for internal testing with a small community of users to ensure the Tic-Tac-Toe app met requirements.",
+        "Launched an internal AI project using local LLMs to read technical documents and access the internet through a local instance of SearXNG and mapped over 70 separate AI and LLM tools and software with 3 views, including relevant logos, summaries, use cases, rankings, and applicable licenses related to usage or development."
+      ]
     }
   ],
   "volunteer": [
@@ -88,17 +88,14 @@
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     },
     {
-        "organization": "Wartime Aide Inc.",
-        "location": "Ipswich, MA",
-        "url": "",
-        "position": "Vice President, Chief Financial Officer, Clerk, and Founding Board Member",
-        "startDate": "2018-07-01",
-        "endDate": "2023-12-31",
-        "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-        "highlights": [
-            "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-            "Men of the year 2014 by Time magazine"
-        ]
+      "organization": "Wartime Aide Inc.",
+      "location": "Ipswich, MA",
+      "url": "",
+      "position": "Vice President, Chief Financial Officer, Clerk, and Founding Board Member",
+      "startDate": "2018-07-01",
+      "endDate": "2023-12-31",
+      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
   "awards": [
