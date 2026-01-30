@@ -100,11 +100,32 @@ ninja.data = [{
           window.open("https://github.com/CharlesC03", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/Charles-Ciampa# your LinkedIn user name", "_blank");
+        },
+      },{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
         handler: () => {
           window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-spotify',
+        title: 'Spotify',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://open.spotify.com/user/2rhugm409ea6xvhbftq9ymtla", "_blank");
+        },
+      },{
+        id: 'social-stackoverflow',
+        title: 'Stackoverflow',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://stackoverflow.com/users/11578449", "_blank");
         },
       },{
       id: 'light-theme',
