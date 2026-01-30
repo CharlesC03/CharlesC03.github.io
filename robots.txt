@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.ciampa.me/sitemap.xml
+Sitemap: https://charles.ciampa.me/sitemap.xml
