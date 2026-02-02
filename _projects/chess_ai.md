@@ -8,9 +8,11 @@ category: School
 giscus_comments: true
 ---
 
-The overall goal of this project was to integrate several AI algorithms into one to play chess at a high level. For this project I worked on it with 3 other team members who worked on other AI algorithms. For my aspect of the project I worked on a deep learning model which would predict a players move from the moves they had previously made.
+The goal of this project was to integrate several AI algorithms to play chess at a high level. I collaborated with three teammates, each responsible for different AI algorithms. My contribution was a deep learning model that predicts a player's next move based on their previous moves.
 
-For my AI model I wanted to use a different approach then already existed. Currently most of the prediction models worked via a CNN. For mine I was curious on how an LSTM fused with a CNN which would allow it to view all parts of the game. While I did use a LSTM which is different from many other models, I found most success when I copied lots of the architecture of [AlphaZero](https://www.science.org/doi/10.1126/science.aar6404).
+For my model, I wanted to take a different approach than what already existed. Most prediction models at the time used CNNs which had a set number of steps they were able to look back. I was curious whether fusing an LSTM with a CNN would allow the model to better capture the temporal progression of a game. While using an LSTM differentiated my approach from many existing models, I found the most success when I incorporated much of the architecture from [AlphaZero](https://www.science.org/doi/10.1126/science.aar6404).
+
+To train the model, I downloaded 500,000 chess games from [Lichess](https://lichess.org/). The data was in PGN format, a standard notation for chess. However, while PGN is human-readable, it cannot be directly fed into a neural network. I needed to create an algorithm to convert PGN into matrix representations suitable for model input. I initially wrote this algorithm in Python since that's where the model was built. However, with 500,000 games containing millions of individual moves, iteration took a significant amount of time. To speed up the process, I rewrote the algorithm in Rust, a systems language with much better performance for this type of task. The final implementation processed all 500,000 games in under 30 minutes and saved them to an HDF5 file, which Python could import efficiently. This approach also allowed me to store additional metadata from each game, which I could integrate into the model to improve performance if I were to revisit this project.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -18,59 +20,9 @@ For my AI model I wanted to use a different approach then already existed. Curre
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The model's top-k accuracy demonstrates performance significantly above random chance, with correct moves frequently appearing among the highest-ranked predictions.
 </div>
 
-The full paper can be found here: [Download Paper](/assets/pdf/AI_Final_Project.pdf).
+With this level of accuracy in predicting a player's move, combining the model with one of our other algorithms, most likely minimax, create a bot capable of quickly devising strong moves.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+For a more in-depth analysis, we wrote a paper in AAAI format: [Access Paper Here](/assets/pdf/AI_Final_Project.pdf)
