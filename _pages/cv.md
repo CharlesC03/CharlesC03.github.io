@@ -5,7 +5,7 @@ title: Resume
 nav: true
 nav_order: 2
 cv_pdf: CharlesCiampaResume.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: I am a first year graduate student persuing a degree in AI with a concentration in ML and an interest in Robotics.
 toc:
   sidebar: left
 ---
