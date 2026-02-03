@@ -12,7 +12,6 @@ redirect: https://github.com/CharlesC03/Improved-Managebac
 
 Redirecting...
 
-
 {% comment %}
 
 Every project has a beautiful feature showcase page.

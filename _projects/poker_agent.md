@@ -9,7 +9,6 @@ giscus_comments: false
 redirect: https://github.com/CharlesC03/cs4180-project
 ---
 
-
 <meta http-equiv="refresh" content="0; url=https://github.com/CharlesC03/cs4180-project">
 
 Redirecting...
