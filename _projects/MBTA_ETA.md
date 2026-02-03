@@ -5,7 +5,14 @@ description: Using data provided by the MBTA estimated my trip to school estimat
 img: assets/img/train.jpg
 importance: 9
 category: School
+redirect: /assets/pdf/Math_IA.pdf
 ---
+
+<meta http-equiv="refresh" content="0; url=/assets/pdf/Math_IA.pdf">
+
+Redirecting...
+
+{% comment %}
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -78,3 +85,5 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+{% endcomment %}
+

@@ -5,7 +5,15 @@ description: Estimated vehicle trajectory exclusively from IMU by fusing magneto
 img: assets/img/car.jpg
 importance: 4
 category: School
+redirect: /assets/pdf/EECE_5554_Lab_5_Report.pdf
 ---
+
+<meta http-equiv="refresh" content="0; url=/assets/pdf/EECE_5554_Lab_5_Report.pdf">
+
+Redirecting...
+
+{% comment %}
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -78,3 +86,4 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+{% endcomment %}

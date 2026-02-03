@@ -1,11 +1,18 @@
 ---
 layout: page
-title: Automatic Lecture Reductor
+title: Automatic Lecture Reducer
 description: a project with no image
-img: assets/img/editing.jpg
+img: assets/img/video_editing.jpg
 importance: 2
 category: Fun
+redirect: https://github.com/CharlesC03/Shorten-Videos
 ---
+
+<meta http-equiv="refresh" content="0; url=https://github.com/CharlesC03/Shorten-Videos">
+
+Redirecting...
+
+{% comment %}
 
 This project was an earlier one of mines.
 Every project has a beautiful feature showcase page.
@@ -83,3 +90,4 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+{% endcomment %}

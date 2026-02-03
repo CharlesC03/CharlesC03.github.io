@@ -5,7 +5,15 @@ description: Made an extension to improve Managebac.
 img: assets/img/6.jpg
 importance: 4
 category: Fun
+redirect: https://github.com/CharlesC03/Improved-Managebac
 ---
+
+<meta http-equiv="refresh" content="0; url=https://github.com/CharlesC03/Improved-Managebac">
+
+Redirecting...
+
+
+{% comment %}
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -78,3 +86,4 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+{% endcomment %}
