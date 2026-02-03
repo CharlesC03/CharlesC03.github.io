@@ -27,7 +27,7 @@ Text: I've seen tons of science fiction from the 70s; some horrendously bad, and
 Sentiment: Positive
 
 Text: [FILL IN]
-Sentiment: 
+Sentiment:
 ```
 
 {% endraw %}
@@ -41,4 +41,3 @@ While we observed clear bias transfer, there are important caveats to consider. 
 For a more in-depth analysis of the results: [Download Paper](/assets/pdf/NLP_Final_Paper.pdf)
 
 To view all the code for this project: [GitHub Repository](https://github.com/CharlesC03/NLP_Final_Project)
-
