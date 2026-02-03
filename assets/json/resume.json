@@ -4,7 +4,7 @@
     "label": "Masters Student",
     "image": "",
     "email": "ciampa.c@northeastern.edu",
-    "url": "https://www.ciampa.me/",
+    "url": "https://charles.ciampa.me/",
     "summary": "First year master student at Northeastern studying AI with a concentration in Machine Learning and an interest in robotics.",
     "location": {
       "city": "Boston",
@@ -131,17 +131,28 @@
   ],
   "skills": [
     {
+      "name": "Coding Languages",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Python", "Swift", "Java", "JavaScript", "Rust", "Typescript", "LaTeX", "HTML", "CSS", "Racket", "C++"]
+    },
+    {
+      "name": "Coding Software",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Git/Github", "Numpy & Pandas", "PyTorch", "ROS2", "OpenCV", "React", "Jira", "Selenium", "Vue", "SPSS"]
+    },
+    {
+      "name": "Mathematics",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Statistics", "Modeling", "Calculus", "Differential Equations"]
+    },
+    {
       "name": "Physics",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "keywords": ["Astrophysics", "Electronics", "Lab Work"]
     }
   ],
   "languages": [
@@ -158,9 +169,37 @@
   ],
   "interests": [
     {
-      "name": "Astronomy",
+      "name": "Traveling",
       "icon": "fa-solid fa-tag",
-      "keywords": ["Astrophysics", "Atacama Desert", "Solar Eclipse"]
+      "keywords": ["Canada", "Chile", "Costa Rica", "England", "France", "Greece", "Italy", "Mexico", "Portugal", "Scotland", "Spain", "Switzerland"]
+    },
+    {
+      "name": "Sports",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Rowing", "Baseball (Red Soxs)", "Basketball (Celtics)", "Biking", "Volleyball", "Hockey", "Swimming"]
+    },
+    {
+      "name": "Movies",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Good Will Hunting",
+        "Everything Everywhere All at Once",
+        "Spider-Man: Across The Spider-Verse & Spider-Man: Into the Spider-Verse",
+        "Interstellar",
+        "Perks of being a Wallflower",
+        "Fantastic Mr.Fox",
+        "Howl's Moving Castle",
+        "A Silent Voice",
+        "Forrest Gump",
+        "Wall-E",
+        "The Breakfast Club",
+        "3 Idiots"
+      ]
+    },
+    {
+      "name": "Reading",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Goodbye, Eri", "Look Back", "One Piece", "Chainsaw Man", "Jujutsu Kaisen", "Demon Slayer"]
     },
     {
       "name": "Food",
@@ -168,7 +207,12 @@
       "keywords": ["Cooking", "beli", "Cutthroat Kitchen", "Alton Brown"]
     },
     {
-      "name": "Open-World Video Games ",
+      "name": "Astronomy",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Astrophysics", "Atacama Desert", "Solar Eclipse"]
+    },
+    {
+      "name": "Video Games ",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Minecraft",
@@ -180,16 +224,6 @@
         "Super Mario Bros Wii",
         "Wizard101"
       ]
-    },
-    {
-      "name": "Traveling",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Canada", "Chile", "Costa Rica", "England", "Greece", "Italy", "Scotland", "Spain", "Switzerland"]
-    },
-    {
-      "name": "Rowing",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Single & Eight", "Erging", "Watching Head of the Charles"]
     }
   ],
   "references": [
@@ -201,12 +235,12 @@
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Bias in Model Distillation",
+      "summary": "Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to smaller student architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.",
+      "highlights": ["Model Distillation", "Large Language Models", "Bias Analysis"],
+      "startDate": "2025-11-01",
+      "endDate": "2025-12-12",
+      "url": "https://charles.ciampa.me/projects/model_distillaiton/"
     }
   ]
 }
