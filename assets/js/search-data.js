@@ -62,7 +62,7 @@ ninja.data = [{
           title: 'Bias Transfer in Model Distillation',
           description: "Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to smaller student architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/model_distillaiton/";
+              window.location.href = "/projects/model_distillation/";
             },},{id: "projects-poker-agent",
           title: 'Poker Agent',
           description: "Created a program in collaboration with a peer which learned to play Texas Hold&#39;em by running 250,000 games through Deep Q-Learning, utilizing a backbone of PyTorch for the neural network.",
