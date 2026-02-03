@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-resume",
           title: "Resume",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "I am a first year graduate student persuing a degree in AI with a concentration in ML and an interest in Robotics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/resume/";
@@ -62,12 +62,12 @@ ninja.data = [{
               window.location.href = "/projects/MBTA_ETA/";
             },},{id: "projects-chess-bot-player-move-predictor",
           title: 'Chess Bot Player Move Predictor',
-          description: "Made an AI which can predict a players move given what moves they had previously made.",
+          description: "A deep learning AI model which can predict a players move from the previous moves they made.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/chess_ai/";
             },},{id: "projects-bias-transfer-in-model-distillation",
           title: 'Bias Transfer in Model Distillation',
-          description: "Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to lightweight architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.",
+          description: "Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to smaller student architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/model_distillaiton/";
             },},{id: "projects-poker-agent",
