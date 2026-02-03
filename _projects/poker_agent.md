@@ -5,8 +5,16 @@ description: Created a program in collaboration with a peer which learned to pla
 img: assets/img/poker.jpg
 importance: 2
 category: School
-giscus_comments: true
+giscus_comments: false
+redirect: https://github.com/CharlesC03/cs4180-project
 ---
+
+
+<meta http-equiv="refresh" content="0; url=https://github.com/CharlesC03/cs4180-project">
+
+Redirecting...
+
+{% comment %}
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -79,3 +87,4 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+{% endcomment %}
