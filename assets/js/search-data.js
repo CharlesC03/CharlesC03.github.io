@@ -35,7 +35,7 @@ ninja.data = [{
               window.location.href = "/projects/chess_ai/";
             },},{id: "projects-high-speed-footage-analyzer",
           title: 'High Speed Footage Analyzer',
-          description: "with background image",
+          description: "Tool for tracking flashing light from High Speed Footage.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/footage_analyzer/";
             },},{id: "projects-improved-managebac",
