@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-resume",
-          title: "Resume",
-          description: "I am a first year graduate student persuing a degree in AI with a concentration in ML and an interest in Robotics.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/resume/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "Projects",
           description: "A growing collection of my projects.",
           section: "Navigation",
