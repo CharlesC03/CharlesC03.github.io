@@ -50,7 +50,7 @@ ninja.data = [{
               window.location.href = "/projects/imu/";
             },},{id: "projects-automatic-lecture-reducer",
           title: 'Automatic Lecture Reducer',
-          description: "a project with no image",
+          description: "This was a project which would take a video and then cut out any parts of the video which had no audio.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lecture_reducer/";
             },},{id: "projects-estimated-transit-eta",
@@ -70,7 +70,7 @@ ninja.data = [{
               window.location.href = "/projects/poker_agent/";
             },},{id: "projects-robotic-photographer-for-3d-gaussian-splatting",
           title: 'Robotic Photographer for 3D Gaussian Splatting',
-          description: "an other project with a background image and giscus comments",
+          description: "A robot which would navigate to a object, then circle it and perform a 3D Gaussian Splat, giving a 3D model of the object.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/robot_photographer/";
             },},{id: "projects-ar-tic-tac-toe",
