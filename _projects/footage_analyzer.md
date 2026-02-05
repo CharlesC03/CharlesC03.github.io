@@ -1,15 +1,15 @@
 ---
 layout: page
 title: High Speed Footage Analyzer
-description: with background image
+description: Tool for tracking flashing light from High Speed Footage.
 img:
 importance: 4
 category: Work
 related_publications: false
 ---
 
-I did this project during my co-op at Gentuity. This project I worked on during the entirety of my co-op. They offered me the option of doing projects while I was there as my job left me lots of extra time. The mindset I had with my project is that it was accessible by all levels of people, that anyone would be able to continue develop on it after I left, and that it was extremely customizable. For it to be accessible I made sure it could be used as a python package allowing for direct access to the classes, accessible via cli commands, and lastly via a GUI I created. At the company they had an issue with their product they were trying to better understand. To do this one of them used a high-speed video camera to capture video of it working in very granular speed. The program worked by tracking a light on the object which would move and change between high and low brightness. What the program would do is tract this light and then export this into a csv file which then could be further analyzed.
+During my co-op at Gentuity, I developed a video analysis tool to help engineers better understand product behavior captured via high-speed camera footage. The system tracks a light source on a moving object—detecting both position and brightness transitions—and exports the data to CSV for further analysis.
 
-The code for the project was done in python and utilized opencv. To make it customizable I designed it with modularity in mind. I made it so that anyone could write their own tracking algorithm and that it would become available as an option in the code.
+I designed the project with three core principles: accessibility, maintainability, and customizability. To make it accessible to users of varying technical backgrounds, I implemented three interfaces: a Python package for direct class access, a CLI for scripted workflows, and a GUI for interactive use. For maintainability, I kept the codebase clean and well-documented so future developers could continue building on it after my departure. This principle of clean and well-documented code is something I have found to be endlessly helpful in future projects and something that I further developed during my time at S1 Industries. I talk about this more in my [Tic-Tac-Toe project](/projects/tic_tac_toe). For customizability, I built a modular architecture that allows users to write and plug in their own tracking algorithms.
 
-I additionally played around with multiproccessing for the application as I initially though that since I thought you could do all the image processing in parallel, however, in the end discovered that actually ran faster without multiprocessing.
+The project was built in Python using OpenCV. I also explored multiprocessing to parallelize the image processing pipeline, but found through benchmarking that the serial implementation actually performed faster. This was a good lesson for me in that parallelization may not always be worth it due to the overhead and extra requirements for it to operate.
