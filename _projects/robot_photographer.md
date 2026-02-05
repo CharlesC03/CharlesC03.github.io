@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Robotic Photographer for 3D Gaussian Splatting
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+description: A robot which would navigate to a object, then circle it and perform a 3D Gaussian Splat, giving a 3D model of the object.
+img: assets/img/robot_photographer.png
 importance: 9
 category: School
 giscus_comments: false

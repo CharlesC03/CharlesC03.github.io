@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Automatic Lecture Reducer
-description: a project with no image
+description: This was a project which would take a video and then cut out any parts of the video which had no audio.
 img: assets/img/video_editing.jpg
 importance: 2
 category: Fun
