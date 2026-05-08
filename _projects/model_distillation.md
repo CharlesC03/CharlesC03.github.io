@@ -3,7 +3,7 @@ layout: page
 title: Bias Transfer in Model Distillation
 description: Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to smaller student architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.
 img: assets/img/llama.jpg
-importance: 1
+importance: 2
 category: School
 related_publications: false
 ---

@@ -3,7 +3,7 @@ layout: page
 title: Poker Agent
 description: Created a program in collaboration with a peer which learned to play Texas Hold'em by running 250,000 games through Deep Q-Learning, utilizing a backbone of PyTorch for the neural network.
 img: assets/img/poker.jpg
-importance: 2
+importance: 3
 category: School
 giscus_comments: false
 redirect: https://github.com/CharlesC03/cs4180-project
