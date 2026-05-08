@@ -31,6 +31,16 @@ ninja.data = [{
           description: "Tool for tracking flashing light from High Speed Footage.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/footage_analyzer/";
+            },},{id: "projects-investigation-into-improving-plonk-performance",
+          title: 'Investigation Into Improving PLONK Performance',
+          description: "Reproduced PLONK on OSV-5M and ran two lines of experiments — swapping in alternative vision encoders (StreetCLIP, DINOv2, MobileCLIP2-S4) and fusing embeddings from spatially proximal images — to study how encoder choice and multi-image context affect diffusion-based geolocalization.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/geo-localization_diffusion/";
+            },},{id: "projects-exploring-generalization-and-multi-task-learning-in-diffusion-policies-with-language-conditioning",
+          title: 'Exploring Generalization and Multi-Task Learning in Diffusion Policies with Language Conditioning',
+          description: "Re-implemented Diffusion Policy and extended it with language conditioning for multi-task robotic manipulation, then ran ablations on LIBERO-10 to study the effect of pretrained vision–language encoders, paraphrased task descriptions, and the multi-task vs. single-task performance gap.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/imitation-learning-diffusion/";
             },},{id: "projects-improved-managebac",
           title: 'Improved Managebac',
           description: "Made an extension to improve Managebac.",
