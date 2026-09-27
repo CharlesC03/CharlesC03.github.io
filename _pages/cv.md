@@ -2,17 +2,11 @@
 layout: cv
 permalink: /resume/
 title: Resume
-nav: false
-nav_order: 2
+nav: true
+nav_order: 4
 cv_pdf: /assets/pdf/CharlesCiampaResume.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: I am a graduate student pursuing a degree in AI with a concentration in ML and an interest in Robotics.
+description: Robotics and machine learning. Download the one-page PDF with the icon on the right.
 toc:
   sidebar: left
 ---
-
-{% comment %}
-
-Hiding page for now. TODO: Finish updating resume.
-
-{% endcomment %}

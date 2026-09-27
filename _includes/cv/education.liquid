@@ -1,5 +1,9 @@
 {% comment %}
-  Unified education entry renderer for both RenderCV and JSONResume formats
+  Local override of al_folio_cv's templates/cv/education.liquid.
+  Changes from upstream:
+  - Degree is the title, with the GPA (`score`) shown as a badge beside it
+  - Concentration/minor (`area`) and institution are shown underneath, institution linked via `url`
+  - Highlights are bullets; `courses` (list or string) is a compact "Relevant coursework" line
   Handles both:
   - RenderCV: institution, area, studyType (or degree), start_date, end_date, location, courses, highlights
   - JSONResume: institution, area, studyType, startDate, endDate, location, courses, highlights
@@ -63,53 +67,62 @@
                   </td>
                 </tr>
               {% endif %}
-              {% if entry.score and entry.score != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-graduation-cap iconlocation"></i>
-                      GPA: {{ entry.score }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
             </tbody>
           </table>
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           {% capture study_type %}
-            {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
+            {% if entry.degree %}{{ entry.degree }}{% elsif entry.studyType %}{{ entry.studyType }}{% endif %}
           {% endcapture %}
+          {% assign study_type = study_type | strip %}
 
-          {% if entry.url %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ study_type }}</a>
+          {% if study_type != '' %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4" style="margin-bottom: 0.25rem">
+              {{ study_type }}
+              {% if entry.score and entry.score != '' %}
+                <span
+                  class="badge align-middle"
+                  style="margin-left: 0.4rem; font-weight: 500; border: 1px solid var(--global-theme-color); color: var(--global-theme-color)"
+                  >GPA {{ entry.score }}</span
+                >
+              {% endif %}
             </h6>
-          {% elsif study_type != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ study_type }}</h6>
-          {% endif %}
-
-          {% if entry.institution %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
           {% endif %}
 
           {% if entry.area %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ entry.area }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; margin-bottom: 0.25rem">{{ entry.area }}</h6>
           {% endif %}
 
-          {% if entry.courses or entry.highlights %}
+          {% if entry.institution %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+              {% if entry.url %}
+                <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.institution }}</a>
+              {% else %}
+                {{ entry.institution }}
+              {% endif %}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
             <ul class="items">
-              {% for item in entry.courses %}
-                <li>
-                  <span class="item">{{ item }}</span>
-                </li>
-              {% endfor %}
               {% for item in entry.highlights %}
                 <li>
                   <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
                 </li>
               {% endfor %}
             </ul>
+          {% endif %}
+
+          {% if entry.courses and entry.courses != empty %}
+            {% if entry.courses.first %}
+              {% assign courses = entry.courses | join: ' · ' %}
+            {% else %}
+              {% assign courses = entry.courses %}
+            {% endif %}
+            <p class="ml-1 ml-md-4" style="font-size: 0.85rem; margin-top: 0.5rem; margin-bottom: 0">
+              <span class="font-weight-bold">Relevant coursework:</span>
+              {{ courses }}
+            </p>
           {% endif %}
         </div>
       </div>

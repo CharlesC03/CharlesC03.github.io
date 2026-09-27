@@ -6,5 +6,5 @@ overrides:
     gem_version: 1.0.2
     upstream_path: templates/cv/education.liquid
     upstream_sha256: f618efe3bc4caeab8f8f6efaae8386d658d4eb6995ebeb32855e173da37f8d2a
-    local_sha256: f788618d4e11ca0837f6c61be8f4d297a5ee48300a86ccc1ebacb55f2bb37d54
+    local_sha256: ad2734ad401f9dcc52951681ec88436781d4c61f741f1f997935e3a138a0cc61
     acknowledged_at: '2026-09-27'
