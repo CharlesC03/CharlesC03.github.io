@@ -1,91 +1,34 @@
-# Agent Guidelines for al-folio (v1.x)
+# Agent guide for charles.ciampa.me
 
-**This file is the authoritative entry point for coding agents working in this repo.** Read it before making any change. It is intentionally short and tool-neutral; it links to the one place each longer-form fact lives.
+This is Charles Ciampa's personal website, built on the **al-folio v1.2** starter. It is a content repo: layouts, includes, styles and JS come from versioned gems (`al_folio_core`, `al_folio_cv`, `al_*`) pinned in the `Gemfile`. See `README.md` for where content lives and how to update al-folio.
 
-`al-folio` v1.x is a **thin Jekyll starter, not a theme**. This repo owns starter wiring, example content, docs, and cross-plugin tests. All runtime — layouts, includes, Sass, Liquid tags, filters, feature JS — lives in versioned gems published under [`al-org-dev`](https://github.com/al-org-dev).
+## Rules
 
-## Route your change
+- **Edit content, not theme internals.** Change `_pages/`, `_projects/`, `_data/`, `_news/`, `assets/`, and `_config.yml`. Don't copy gem files into `_layouts/`, `_includes/` or `_sass/` unless the user asks for an override.
+- **The one local override** is `_includes/cv/education.liquid` (GPA badge and coursework line). After editing it, run `bundle exec al-folio upgrade overrides accept _includes/cv/education.liquid` so `.al-folio-overrides.yml` stays in sync.
+- **Format before committing:** `npx prettier --write .` (the Prettier CI check fails otherwise).
+- **Use normal branches in this folder, not git worktrees.** The Docker entry point runs git, and a worktree's `.git` pointer isn't mounted into the container, so `docker compose up` fails there. Don't add a `docker-compose.override.yml` to work around it.
 
-Find your change on the left; edit only what is on the right.
+## Running and checking
 
-| Your change                                                                                                              | Goes in                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| Dependency pin, plugin activation, feature flag                                                                          | this repo: `Gemfile` **and** `_config.yml` (both — see below)                                                 |
-| Example/demo content, bibliography, data files                                                                           | this repo: `_pages`, `_posts`, `_projects`, `_news`, `_teachings`, `_books`, `_data`                          |
-| Documentation                                                                                                            | this repo: `docs/` (long-form) or this file (agent rules)                                                     |
-| Cross-plugin integration test, visual parity test                                                                        | this repo: `test/integration_*.sh`, `test/visual/`                                                            |
-| Plugin catalog metadata                                                                                                  | this repo: `_data/featured_plugins.yml`                                                                       |
-| A layout, include, or Sass partial                                                                                       | the owning gem — start with `al_folio_core`                                                                   |
-| A Liquid tag or filter, or what a tag renders                                                                            | the gem that registers it — see the [delegation table](docs/ARCHITECTURE.md#wrapper-to-tag-to-gem-delegation) |
-| Feature behavior (search, math, charts, comments, cookies, icons, CV, distill, analytics, images, newsletter, citations) | that feature's gem — see [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md)                                           |
-| Component/unit test for gem-owned behavior                                                                               | the owning gem, not here                                                                                      |
-| A feature with no existing owner                                                                                         | open a plugin proposal issue first, then a standalone plugin repo                                             |
+- The macOS system Ruby (2.6) is too old; use Docker. `docker compose up` serves http://localhost:8080 with live reload.
+- For one-off commands: `docker compose run --rm jekyll bash`, then `bundle exec jekyll build` or `bundle exec al-folio upgrade audit`.
+- The live site sits behind Cloudflare, and scripted requests (`curl`) get a 403 challenge. To verify a deploy, inspect the `gh-pages` branch instead.
 
-[`docs/BOUNDARIES.md`](docs/BOUNDARIES.md) is the authoritative area-to-gem table. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) explains how the pieces connect.
+## Resume
 
-## Stop sign
+- `assets/pdf/CharlesCiampaResume.pdf` is exported from the user's LaTeX resume and is the source of truth for resume content. The resume page (`_data/cv.yml`) should match it.
+- `_data/cv.yml` is rendered only by `al_folio_cv` on the website, not by the RenderCV CLI. Web-only fields (`label`, `summary`, `score`, `courses`, `keywords`, `icon`) are intentional.
+- The page shows years only. Entries within a single year use `date: <end month>` with the full range in a comment, so they show one year instead of "2024 - 2024".
+- The capstone is in progress. When it finishes, drop "(In Progress)" and add an end date and results.
 
-**If your change would create any of these paths in this repo, it belongs in a gem instead:**
+## Blog
 
-```
-_layouts/   _includes/   _sass/   _scripts/   assets/tailwind/   tailwind.config.js   assets/webfonts/
-```
+- The blog is hidden from the nav. al-folio's demo posts live in `_drafts/` as examples and are not published; don't move them back to `_posts/`.
+- The `/blog/...` pages on the live site come from the Letterboxd RSS feed in `external_sources` in `_config.yml`.
 
-`npm run lint:style-contract` fails CI when any of them exists here, and it also rejects `build:css` / `build:tailwind` npm scripts. Do not add a starter-local Tailwind or CSS build pipeline.
+## CI and deploy
 
-This restriction applies to **this repo only**. A user's own site created from this template _may_ legally shadow gem-owned files — see [local overrides: your site vs. this repo](docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo).
-
-## Three failures that produce no error message
-
-Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md#failure-modes-that-produce-no-error-message) for the full explanation. The short version:
-
-1. **Features fail silently.** A feature renders only when its gem is loaded _and_ its flag is on _and_ the page opts in. Otherwise the Liquid tag emits an empty string — no warning, no error.
-2. **`Gemfile` and `_config.yml` are two lists that must agree.** A plugin in only one of them is inert. Adding or removing a plugin means editing both. Repo dirs use hyphens (`al-folio-core`); gem/plugin ids use underscores (`al_folio_core`).
-3. **This repo's effective baseurl is `/al-folio`.** `_config.yml` already sets it, so a plain `bundle exec jekyll build` is correct — that is what `deploy.yml`, `broken-links-site.yml` and `axe.yml` run. Passing `--baseurl /al-folio` is redundant but harmless; blanking the baseurl out is what renders the site unstyled with broken links. Dev server is at `http://localhost:4000/al-folio/`.
-
-## Validated local command set
-
-Run from the repo root, in this order:
-
-```bash
-bundle install
-npm ci
-npm run lint:prettier
-npm run lint:style-contract
-bundle exec jekyll build --baseurl /al-folio
-bash test/integration_comments.sh
-bash test/integration_plugin_toggles.sh
-bash test/integration_distill.sh
-bash test/integration_bootstrap_compat.sh
-bash test/integration_upgrade_cli.sh
-bash test/integration_css_minify.sh
-bash test/integration_new_plugins.sh
-npx playwright install chromium webkit
-npm run test:visual
-bundle exec al-folio upgrade audit
-bundle exec al-folio upgrade overrides audit
-bundle exec al-folio upgrade report
-docker compose up -d
-curl -fsS http://127.0.0.1:8080/al-folio/ >/dev/null
-docker compose logs --tail=80
-docker compose down
-```
-
-All seven `test/integration_*.sh` scripts are gated by `unit-tests.yml`; run the ones your change touches. Docker note: v1 uses `/srv/jekyll/bin/entry_point.sh` and serves from container-local `/tmp/_site` to avoid host bind-mount write deadlocks.
-
-## Before you open a PR
-
-- Keep starter work here; route runtime behavior to the owning plugin repo.
-- Run `npm run lint:prettier` (Prettier with `@shopify/prettier-plugin-liquid`, `printWidth: 150`). `npx prettier . --write` fixes formatting.
-- Keep docs aligned with v1 ownership, and keep each fact in one place — link rather than restate.
-- If you create or keep local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml` after review.
-
-## Further reading
-
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — how the starter and gems fit together, silent failure modes, the v1 config contract, local overrides.
-- [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md) — authoritative area-to-gem ownership table and PR triage playbook.
-- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — contributor workflow and agent tooling.
-- [`docs/README.md`](docs/README.md) — index of all user and maintainer guides.
-- `.agents/skills/al-folio-bootstrap/SKILL.md` — new-site setup workflow.
-- `.agents/skills/al-folio-v1-migration/SKILL.md` — customized-fork migration and override drift auditing.
-- `.codex/skills` and `.claude/skills` are symlinks to `.agents/skills` for agent-specific discovery.
+- Pushing or merging to `main` runs **Deploy site**, which publishes to `gh-pages`. The custom domain `charles.ciampa.me` is set in the repo's Pages settings. Pull requests build without deploying.
+- Upstream workflows that only test the al-folio starter were removed on purpose: `unit-tests.yml`, `visual-regression.yml`, `update-citations.yml` (no Google Scholar ID) and `render-cv.yml` (the LaTeX PDF is the download). Don't restore them.
+- `gh pr create` fails here with a GraphQL permissions error; open PRs with `gh api repos/CharlesC03/CharlesC03.github.io/pulls` instead.

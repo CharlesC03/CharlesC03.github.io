@@ -30,7 +30,7 @@ cv:
           - Computer Vision
           - Natural Language Processing
         highlights:
-          - "Capstone (in progress): evaluating the latent states learned by world models, advised by Professor Chris Amato"
+          - "Capstone (in progress): evaluating the latent states learned by world models, advised by Professor [Chris Amato](https://www.ccs.neu.edu/home/camato/)"
 
       - institution: Northeastern University, Khoury College of Computer Sciences
         location: Boston, MA
@@ -101,7 +101,7 @@ cv:
     Projects:
       - name: "Master's Capstone (In Progress): Evaluating World Model Latent States"
         start_date: 2026-09
-        summary: Currently working on a systematic way to evaluate the latent states that world models learn, rather than judging them only by downstream task performance. Advised by Professor Chris Amato, working with PhD student Ahmed Agha.
+        summary: Currently working on a systematic way to evaluate the latent states that world models learn, rather than judging them only by downstream task performance. Advised by Professor [Chris Amato](https://www.ccs.neu.edu/home/camato/), working with PhD student [Ahmed Agha](https://aagha6.github.io/).
         highlights:
           - Focused on robotics settings, where information like contact and force is only partly visible to the robot
 

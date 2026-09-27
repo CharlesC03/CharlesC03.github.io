@@ -36,6 +36,6 @@ autonomy aspect that truly captivated me. Later in my undergraduate career, I re
 passion through robotics coursework, which appealed to me as a natural intersection of physics and
 AI. In my master's program, I have focused my coursework and research on robotics.
 
-For my master's capstone, I am working with Professor Chris Amato and PhD student Ahmed Agha on world models, which let agents learn an internal model of their environment so they can predict what happens next, plan, and train in imagination. These models are usually judged by downstream task performance, which says little about what they actually learned. My project develops a systematic way to evaluate the latent states that world models learn, with an eye toward robotics, where information like contact and force is only partly visible to the robot.
+For my master's capstone, I am working with Professor [Chris Amato](https://www.ccs.neu.edu/home/camato/) and PhD student [Ahmed Agha](https://aagha6.github.io/) on world models, which let agents learn an internal model of their environment so they can predict what happens next, plan, and train in imagination. These models are usually judged by downstream task performance, which says little about what they actually learned. My project develops a systematic way to evaluate the latent states that world models learn, with an eye toward robotics, where information like contact and force is only partly visible to the robot.
 
 I am currently seeking a full-time role in robotics and/or AI starting in January 2027.
