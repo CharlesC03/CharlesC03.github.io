@@ -1,102 +1,143 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Charles Ciampa
-    # - name: Date of Birth
-    #   value: 19th April 2003
-    - name: Email
-      value: ciampa.c@northeastern.edu
-    - name: Languages
-      value: English, Spanish
-    - name: Location
-      value: Cambridge, MA
+cv:
+  name: Charles Ciampa
+  label: Master's Student
+  email: ciampa.c@northeastern.edu
+  location: Boston, MA
+  website: https://charles.ciampa.me/
+  image: ""
+  summary: Master's student at Northeastern studying AI with a concentration in Machine Learning and an interest in robotics.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: M.S. in Artificial Intelligence
-      institution: <a href="https://www.northeastern.edu">Northeastern University</a>
-      location: Boston, MA
-      year: 2025.08-2027.05
-      area: Machine Learning
-      description:
-        - "Concentration: Machine Learning"
-        - "GPA: 4.0"
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: B.S. in Computer Science and Physics with Minor in Mathematics
-      institution: Khoury College at Northeastern University, Boston, MA, USA
-      description:
-        - Description 1.
-        - Description 2.
+  social_networks:
+    - network: LinkedIn
+      username: charles-ciampa
+    - network: GitHub
+      username: CharlesC03
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Engineering Intern
-      institution: <a href="https://s1pbc.com/">S1 Industries PBC Inc.</a>
-      year: August 2024 - December 2024
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Medical Device Testing Engineer Associate
-      institution: <a href="https://gentuity.com/">Gentuity</a>
-      year: July 2023 - December 2023
-      description:
-        - Description 1.
-        - Description 2.
+  sections:
+    Education:
+      - institution: Northeastern University
+        location: Boston, MA, USA
+        url: https://www.northeastern.edu/
+        area: Artificial Intelligence with Concentration in Machine Learning
+        studyType: MS
+        start_date: 2025-09
+        end_date: 2026-12
+        score: "4.0"
+        courses: "Natural Language Processing, Deep Learning, Robotic Science & Systems, Robotic Sensing & Navigation, Computer Vision"
 
-    - title: Vice President
-      institution: AI Club at Northeastern
-      year: 1917-1933
+      - institution: Northeastern University
+        location: Boston, MA, USA
+        url: https://www.northeastern.edu/
+        area: Computer Science and Physics with Minor in Mathematics
+        studyType: BS
+        # TODO: add start_date / end_date
+        score: "3.3"
+        courses: "Machine Learning and Data Mining, Artificial Intelligence, Reinforcement Learning, Multimessenger Astrophysics, Astrophysical Processes, Advanced Physics Lab, Statistics & Stochastic Processes, Networks & Distributed Systems, Object-Oriented Design, Electronics, Modern Physics, Thermodynamics & Statistical Mechanics, Differential Equations & Linear Algebra, Multivariable Calculus"
+        highlights:
+          - Dean's List
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+    Experience:
+      - company: S1 Industries PBC Inc.
+        position: Engineering Intern
+        location: Medford, MA
+        url: https://s1pbc.com/
+        start_date: 2024-08
+        end_date: 2024-12
+        highlights:
+          - Performed 10+ explorations of technologies and problems using methodology developed by MIT professor Luis Perez-Breva for his startup-focused iTeams class, including reading research for each new technology and proposing potential companies to create.
+          - Spearheaded the development of an Augmented Reality Tic-Tac-Toe game with options for multiplayer remote playing for VisionOS's mixed immersive environment using Swift, and support for Apple Personas over SharePlay.
+          - Created app specifications, testing procedures, and utilized TestFlight for internal testing with a small community of users to ensure the Tic-Tac-Toe app met requirements.
+          - Launched an internal AI project using local LLMs to read technical documents and access the internet through a local instance of SearXNG, and mapped over 70 separate AI and LLM tools and software with 3 views, including relevant logos, summaries, use cases, rankings, and applicable licenses related to usage or development.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+      - company: Gentuity, LLC
+        position: Medical Device Testing Engineer Associate
+        location: Sudbury, MA
+        url: https://gentuity.com/
+        start_date: 2023-07
+        end_date: 2023-12
+        # TODO: add summary / highlights
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    Volunteer:
+      - company: Artificial Intelligence Club of Northeastern University
+        position: Vice President
+        location: Boston, MA
+        url: https://ainu-website.web.app/
+        start_date: 2023-05
+        end_date: 2025-04
+        summary: Was with the club from its inception and then took over leadership from the founders of the club. Brought the club from a small club into one of the better known clubs at Northeastern.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items:
-#         - Nobel Prize in Physics
-#         - Matteucci Medal
-#     - year: 2029
-#       items:
-#         - Max Planck Medal
+      - company: Wartime Aide Inc.
+        position: Vice President, Chief Financial Officer, Clerk, and Founding Board Member
+        location: Ipswich, MA
+        start_date: 2018-07
+        end_date: 2023-12
+        summary: As one of the founding members of Wartime Aide, I worked on a team to set up the non-profit, refine our mission, and develop our programs. Our mission at Wartime Aide is to better educate society on the challenges that refugees face through our podcast, The Refugee Report. As Vice President, I help maintain the operations of the organization, and as Chief Financial Officer I manage all our finances and taxes. As Clerk, I manage all our documents and perform all the filing for the organization.
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    Projects:
+      - name: Bias in Model Distillation
+        url: https://charles.ciampa.me/projects/model_distillation/
+        summary: Investigated bias propagation during knowledge distillation from Llama 3.1 8B Instruct to smaller student architectures (BoW, CNN, DistilBERT), quantifying measurable increases in racial and gender bias across student models.
+        highlights:
+          - Model Distillation
+          - Large Language Models
+          - Bias Analysis
+        start_date: 2025-11
+        end_date: 2025-12
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    Skills:
+      - name: Coding Languages
+        icon: fa-solid fa-hashtag
+        keywords: "Python, Swift, Java, JavaScript, Rust, TypeScript, LaTeX, HTML, CSS, Racket, C++"
+
+      - name: Coding Software
+        icon: fa-solid fa-hashtag
+        keywords: "Git/GitHub, NumPy & Pandas, PyTorch, ROS2, OpenCV, React, Jira, Selenium, Vue, SPSS"
+
+      - name: Mathematics
+        icon: fa-solid fa-hashtag
+        keywords: "Statistics, Modeling, Calculus, Differential Equations"
+
+      - name: Physics
+        icon: fa-solid fa-hashtag
+        keywords: "Astrophysics, Electronics, Lab Work"
+
+    Languages:
+      - name: English
+        summary: "Native speaker"
+
+      - name: Spanish
+        summary: "Fluent in Speaking and Reading/Writing"
+
+    Interests:
+      - name: Traveling
+        icon: fa-solid fa-tag
+        keywords: "Canada, Chile, Costa Rica, England, France, Greece, Italy, Mexico, Portugal, Scotland, Spain, Switzerland"
+
+      - name: Sports
+        icon: fa-solid fa-tag
+        keywords: "Rowing, Baseball (Red Sox), Basketball (Celtics), Biking, Volleyball, Hockey, Swimming"
+
+      - name: Movies
+        icon: fa-solid fa-tag
+        keywords: "Good Will Hunting, Everything Everywhere All at Once, Spider-Man: Across the Spider-Verse & Into the Spider-Verse, Interstellar, The Perks of Being a Wallflower, Fantastic Mr. Fox, Howl's Moving Castle, A Silent Voice, Forrest Gump, WALL-E, The Breakfast Club, 3 Idiots"
+
+      - name: Reading
+        icon: fa-solid fa-tag
+        keywords: "Goodbye, Eri; Look Back; One Piece; Chainsaw Man; Jujutsu Kaisen; Demon Slayer"
+
+      - name: Food
+        icon: fa-solid fa-tag
+        keywords: "Cooking, beli, Cutthroat Kitchen, Alton Brown"
+
+      - name: Astronomy
+        icon: fa-solid fa-tag
+        keywords: "Astrophysics, Atacama Desert, Solar Eclipse"
+
+      - name: Video Games
+        icon: fa-solid fa-tag
+        keywords: "Minecraft, Red Dead Redemption 2, Zelda: Breath of the Wild, Zelda: Tears of the Kingdom, Terraria, Mario Kart, New Super Mario Bros. Wii, Wizard101"
+
+    References:
+      - name: Sam McMorrow
+        icon: fa-solid fa-laptop
+        reference: Sam was the founder and President of Wartime Aide. We worked closely together for the entire 5 years Wartime Aide was operational.

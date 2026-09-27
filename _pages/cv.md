@@ -4,8 +4,9 @@ permalink: /resume/
 title: Resume
 nav: false
 nav_order: 2
-cv_pdf: CharlesCiampaResume.pdf # you can also use external links here
-description: I am a first year graduate student persuing a degree in AI with a concentration in ML and an interest in Robotics.
+cv_pdf: /assets/pdf/CharlesCiampaResume.pdf # you can also use external links here
+cv_format: rendercv # options: rendercv, jsonresume
+description: I am a graduate student pursuing a degree in AI with a concentration in ML and an interest in Robotics.
 toc:
   sidebar: left
 ---
