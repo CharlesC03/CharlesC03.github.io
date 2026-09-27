@@ -1,102 +1,193 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Charles Ciampa
-    # - name: Date of Birth
-    #   value: 19th April 2003
-    - name: Email
-      value: ciampa.c@northeastern.edu
-    - name: Languages
-      value: English, Spanish
-    - name: Location
-      value: Cambridge, MA
+cv:
+  name: Charles Ciampa
+  label: M.S. Student in Artificial Intelligence
+  email: ciampa.c@northeastern.edu
+  location: Cambridge, MA
+  website: https://charles.ciampa.me/
+  summary: M.S. student in Artificial Intelligence (Machine Learning concentration) at Northeastern University, focused on robotics and robot learning. Graduating in December 2026 and seeking full-time roles in robotics and AI starting January 2027.
 
-- title: Education
-  type: time_table
-  contents:
-    - title: M.S. in Artificial Intelligence
-      institution: <a href="https://www.northeastern.edu">Northeastern University</a>
-      location: Boston, MA
-      year: 2025.08-2027.05
-      area: Machine Learning
-      description:
-        - "Concentration: Machine Learning"
-        - "GPA: 4.0"
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: B.S. in Computer Science and Physics with Minor in Mathematics
-      institution: Khoury College at Northeastern University, Boston, MA, USA
-      description:
-        - Description 1.
-        - Description 2.
+  social_networks:
+    - network: LinkedIn
+      username: charles-ciampa
+    - network: GitHub
+      username: CharlesC03
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Engineering Intern
-      institution: <a href="https://s1pbc.com/">S1 Industries PBC Inc.</a>
-      year: August 2024 - December 2024
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Medical Device Testing Engineer Associate
-      institution: <a href="https://gentuity.com/">Gentuity</a>
-      year: July 2023 - December 2023
-      description:
-        - Description 1.
-        - Description 2.
+  sections:
+    Education:
+      - institution: Northeastern University, Khoury College of Computer Sciences
+        location: Boston, MA
+        url: https://www.khoury.northeastern.edu/
+        degree: M.S. in Artificial Intelligence
+        area: Concentration in Machine Learning
+        start_date: 2025-09
+        end_date: 2026-12
+        score: "4.0"
+        courses:
+          - Autonomous Field Robotics
+          - Robotic Science & Systems
+          - Robotic Sensing & Navigation
+          - Deep Learning
+          - Computer Vision
+          - Natural Language Processing
+        highlights:
+          - "Capstone (in progress): evaluating the latent states learned by world models, advised by Professor Chris Amato"
 
-    - title: Vice President
-      institution: AI Club at Northeastern
-      year: 1917-1933
+      - institution: Northeastern University, Khoury College of Computer Sciences
+        location: Boston, MA
+        url: https://www.khoury.northeastern.edu/
+        degree: B.S. in Computer Science and Physics
+        area: Minor in Mathematics
+        date: 2025-08
+        courses:
+          - Artificial Intelligence
+          - Reinforcement Learning
+          - Machine Learning & Data Mining
+          - Statistics & Stochastic Processes
+          - Differential Equations & Linear Algebra
+          - Multivariable Calculus
+          - Object-Oriented Design
+          - Networks & Distributed Systems
+          - Electronics
+        highlights:
+          - Dean's List
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+    Experience:
+      - company: S1 Industries PBC Inc.
+        position: Engineering Intern
+        location: Medford, MA
+        url: https://s1pbc.com/
+        date: 2024-12 # 2024-08 to 2024-12
+        highlights:
+          - Performed 10+ explorations of technologies and problems using methodology developed by MIT professor Luis Perez-Breva for his startup-focused iTeams class, including reading research for each new technology and proposing potential companies to create
+          - Spearheaded the development of an Augmented Reality Tic-Tac-Toe game with options for multiplayer remote playing using SharePlay (with/without Apple Personas) for visionOS's mixed immersive environment using Swift
+          - Created app specifications, testing procedures, and utilized TestFlight for internal testing with a small community of users to ensure the Tic-Tac-Toe app met requirements
+          - Launched an internal AI project using local LLMs to read technical documents and access the internet through a local instance of SearXNG, and mapped over 70 separate AI and LLM tools and software with 3 views, including relevant logos, summaries, use cases, rankings, and applicable licenses related to usage or development
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+      - company: Gentuity
+        position: Medical Device Testing Engineer Associate
+        location: Sudbury, MA
+        url: https://gentuity.com/
+        date: 2023-12 # 2023-07 to 2023-12
+        highlights:
+          - Engineered a well-documented Python program for point tracking in high-speed camera footage, offering users flexibility with customizable algorithms and seamless data export in multiple formats
+          - Developed a user-friendly interface and adaptable tracking settings, providing accessibility through Python scripts, a command line interface, options for selecting specific video frame areas and time intervals for efficient analysis, and a graphical user interface (GUI)
+          - Conducted rigorous testing on both software and catheter integration with the OCT device, ensuring robust verification and validation and meticulous data collection for quality assurance purposes
+          - Executed tests and collected data to secure FDA, BSI, and PMDA submissions for a new catheter
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+      - company: AI Club at Northeastern University
+        position: Founding Member and Vice President
+        location: Boston, MA
+        url: https://ainu-website.web.app/
+        start_date: 2023-05
+        end_date: 2025-04
+        highlights:
+          - Pioneered a project proposal, assignment, and mentoring system enabling club members to collaborate in teams and raise funding for AI projects, including SwarmScape (swarm robotics for greenhouse monitoring)
+          - Launched InnovAIte, now an annual 2-day AI hackathon, attracting 80+ participants and 11 expert speakers and judges from industry and academia in its inaugural year
+          - Managed an 8-person executive board to coordinate weekly meetings, schedule student events, organize lab tours, and plan future semesters
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items:
-#         - Nobel Prize in Physics
-#         - Matteucci Medal
-#     - year: 2029
-#       items:
-#         - Max Planck Medal
+    Volunteer:
+      - company: Wartime Aide Inc.
+        position: Vice President, Chief Financial Officer, Clerk, and Founding Board Member
+        location: Ipswich, MA
+        start_date: 2018-07
+        end_date: 2023-12
+        highlights:
+          - Co-founded a non-profit that educates the public on the challenges refugees face through its podcast, The Refugee Report
+          - Helped set up the organization, refine its mission, and develop its programs
+          - As Vice President, maintained the organization's day-to-day operations
+          - As Chief Financial Officer, managed all finances and tax filings
+          - As Clerk, maintained the organization's records and handled all official filings
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    Projects:
+      - name: "Master's Capstone (In Progress): Evaluating World Model Latent States"
+        start_date: 2026-09
+        summary: Currently working on a systematic way to evaluate the latent states that world models learn, rather than judging them only by downstream task performance. Advised by Professor Chris Amato, working with PhD student Ahmed Agha.
+        highlights:
+          - Focused on robotics settings, where information like contact and force is only partly visible to the robot
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+      - name: Language-Conditioned Diffusion Policy
+        url: /projects/imitation-learning-diffusion/
+        date: 2026-04 # 2026-03 to 2026-04
+        highlights:
+          - Reimplemented a diffusion policy (PyTorch) with FiLM language conditioning to drive a 7-DoF Franka robotic arm on the 10 long-horizon tasks of LIBERO-10 (robosuite/MuJoCo), generating target poses and gripper states from vision and language
+          - Built a modular pipeline for swappable vision encoders; ResNet-18 from scratch reached 32.5% task success vs 0% for frozen SigLIP2
+          - Generated ~40 LLM paraphrases per task for a 4x gain in task success (32.5% vs 7.5%) over task-ID memorization
+
+      - name: Diffusion-Based Image Geolocalization (PLONK)
+        url: /projects/geo-localization_diffusion/
+        date: 2026
+        highlights:
+          - Reproduced PLONK's Riemannian flow-matching geolocalization on OSV-5M (1,076 km mean error vs 1,069 km reported)
+          - Benchmarked StreetCLIP, DINOv2, and MobileCLIP2-S4 encoders; MobileCLIP2-S4 stayed within a few percent of DINOv2 at a fraction of the size
+          - Built a KD-tree proximity pipeline to fuse embeddings from nearby images via averaging and attention
+
+      - name: Estimating Trajectory From IMU
+        url: /projects/imu/
+        date: 2025-12 # 2025-09 to 2025-12
+        highlights:
+          - Estimated vehicle trajectory from IMU data using a weighted-average complementary filter (α=0.98) to fuse magnetometer and gyroscope headings, achieving position accuracy within 2 m of GPS for up to 6.8 seconds of dead reckoning
+          - Calibrated the magnetometer via least-squares for hard/soft iron correction, validated on an 18-minute dataset with 10+ turns
+          - Developed Python ROS2 Jazzy drivers for a VN-100 IMU/GPS, implementing custom messages, NMEA parsing, and UTM conversion
+
+      - name: Bias Transfer in Model Distillation
+        url: /projects/model_distillation/
+        date: 2025-12 # 2025-11 to 2025-12
+        highlights:
+          - Built the teacher pipeline, generating soft sentiment labels on IMDB with few-shot prompted Llama 3.1 8B Instruct for BoW, CNN, and DistilBERT students
+          - Measured bias on the Equity Evaluation Corpus, finding that bias transferred to every student, with the largest shifts in DistilBERT
+
+      - name: Robotic Photographer for 3D Gaussian Splatting
+        url: /projects/robot_photographer/
+        date: 2025-04 # 2025-03 to 2025-04
+        highlights:
+          - Deployed ROS Noetic on a LoCoBot mobile robot (Create 3 base) to autonomously detect, approach, and circumnavigate objects via segmentation (no April tags), capturing RGBD imagery for 3D Gaussian Splatting reconstruction
+          - Implemented ZeroMQ networking to stream RGBD data to a remote workstation for a sub-minute capture workflow (team of 4)
+
+    Skills:
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords: "Python, Swift, Java, JavaScript, TypeScript, Rust, R, Racket, HTML, CSS, LaTeX"
+
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, NumPy & Pandas, Hugging Face, OpenCV, Diffusion Models, LLMs, Reinforcement Learning"
+
+      - name: Robotics & Simulation
+        icon: fa-solid fa-robot
+        keywords: "ROS2 (Jazzy), ROS Noetic, robosuite (MuJoCo), LIBERO, IMU/GPS Sensor Fusion, 3D Gaussian Splatting"
+
+      - name: Tools & Frameworks
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Git/GitHub, Claude Code, React, Selenium, ZeroMQ, TestFlight, Jira"
+
+    Languages:
+      - name: English
+        summary: "Native speaker"
+
+      - name: Spanish
+        summary: "Fluent and literate"
+
+    Interests:
+      - name: Traveling
+        icon: fa-solid fa-plane
+        keywords: "Canada, Chile, Costa Rica, England, France, Greece, Italy, Mexico, Portugal, Scotland, Spain, Switzerland"
+
+      - name: Food
+        icon: fa-solid fa-utensils
+        keywords: "Cooking, Alton Brown, Cutthroat Kitchen, beli"
+
+      - name: Astronomy
+        icon: fa-solid fa-star
+        keywords: "Astrophysics, Atacama Desert, Solar Eclipse"
+
+      - name: Reading
+        icon: fa-solid fa-book
+        keywords: "Manga, Non-Fiction"
+
+      - name: Video Games
+        icon: fa-solid fa-gamepad
+        keywords: "Open-world games: Minecraft, Red Dead Redemption 2"
+
+      - name: Sports
+        icon: fa-solid fa-person-biking
+        keywords: "Rowing, Biking, Red Sox, Celtics"
